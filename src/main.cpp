@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include <BleSerialClient.h>
 
-static BleSerialClient SerialBT;
+BleSerialClient SerialBT;
 
 uint8_t unitMACAddress[6]; // Use MAC address in BT broadcast and display
 char deviceName[20];       // The serial string that is broadcast.
