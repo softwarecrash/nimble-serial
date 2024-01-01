@@ -78,7 +78,8 @@ bool BleSerialClient::connectToServer() {
    // pClient  = BLEDevice::createClient();  // Client Created in begin
     log_i(" - Created client");
    
-    pClient->setMTU(517); //set client to request maximum MTU from server (default is 23 otherwise)
+   //deactivated nimble dont know it
+    //pClient->setMTU(517); //set client to request maximum MTU from server (default is 23 otherwise)
   
    // Connect to the remote BLE Server.
     pClient->connect(myDevice);  // if you pass BLEAdvertisedDevice instead of address, it will be recognized type of peer device address (public or private)

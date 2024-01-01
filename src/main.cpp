@@ -1,14 +1,12 @@
 // https://github.com/wholybee/esp32-smartBMSdisplay
 #include <Arduino.h>
 #include <BleSerialClient.h>
-#include <ModbusMaster.h>
 
 static BleSerialClient SerialBT;
 
 uint8_t unitMACAddress[6]; // Use MAC address in BT broadcast and display
 char deviceName[20];       // The serial string that is broadcast.
-uint8_t i, result;
-ModbusMaster epnode; // instantiate ModbusMaster object
+
 unsigned long RestartTimer = 0;
 void startBluetooth()
 {

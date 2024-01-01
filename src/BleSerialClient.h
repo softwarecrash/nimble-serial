@@ -3,6 +3,8 @@
 #include "NimBLEDevice.h"
 #include "ByteRingBuffer.h"
 
+//added, nimble doesnt have this value
+#define ESP_GATT_MAX_ATTR_LEN 600
 
 #define BLE_BUFFER_SIZE ESP_GATT_MAX_ATTR_LEN //must be greater than MTU, less than ESP_GATT_MAX_ATTR_LEN
 #define MIN_MTU 50
