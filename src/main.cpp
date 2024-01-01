@@ -33,10 +33,6 @@ void setup()
 void loop()
 {
   SerialBT.bleLoop();
-  // while (!SerialBT.connected()) SerialBT.bleLoop();
-  // epnode.begin(0XD2, SerialBT);
-  // while(SerialBT.available())Serial.println(SerialBT.read());
-  uint8_t amountOfCell;
   if (millis() >= (RestartTimer + 1000))
   {
     SerialBT.write(0x00);
